@@ -1,0 +1,54 @@
+javascript:void((function(){
+	var%20d=document;d.write('
+	<!DOCTYPE%20html>
+	<html>
+		<head>
+			<meta%20charset="UTF-8">
+			<title>'+d.title+'%20-%20Test</title>
+
+			<link%20rel="stylesheet"%20href="http://localhost/Xpath/style/index.css"%20type="text/css"/>
+
+			<script%20src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script%20type="text/javascript"%20src="http://localhost/Xpath/js/javascript-xpath.js"></script>
+			<script%20type="text/javascript"%20src="http://localhost/Xpath/js/dominspector.js"></script>
+			<script%20type="text/javascript"%20src="http://localhost/Xpath/js/index1.js"></script>			
+		</head>
+		<body>
+			<header>
+				<div%20class="close">
+					<a%20href="#">%C3%97</a>
+				</div>
+				<div%20id="size"></div>
+				<div%20class="keyboard">
+					<a%20href="#">I</a>
+				</div>
+				<div%20class="cssrefresh">
+					<a%20href="#">I</a>
+				</div>
+				<div%20id="devices">
+					<a%20href="#"%20class="tablet-portrait">
+						<span>Tablet%20Portrait</span>
+					</a>
+					<a%20href="#"%20class="tablet-landscape">
+						<span>Tablet%20Landscape</span>
+					</a>
+					<a%20href="#"%20class="smartphone-landscape">
+						<span>iPhone%20Landscape</span>
+					</a>
+					<a%20href="#"%20class="smartphone-portrait">
+						<span>iPhone%20Portrait</span>
+					</a>
+					<a%20href="#"%20class="auto%20active">
+						<span>Auto</span>
+					</a>
+				</div>
+			</header>
+			<section>
+				<div%20id="wrapper">
+					<iframe%20src="http://localhost/xpath/redirect.php?url='+d.URL+'"></iframe>
+					<span%20class="keyboard-bg"></span>
+				</div>
+			</section>
+		</body>
+	</html>')
+})());

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>XPath</title>
+	<link rel="stylesheet" href="./style/index.css" type="text/css"/>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/javascript-xpath.js"></script>
+	<script type="text/javascript" src="./js/dominspector.js"></script>
+	<script type="text/javascript" src="./js/index1.js"></script>
+</head>
+<body>
+	<h1>
+		<a href="/" title="html2xpath" accesskey="z">html2xpath</a>
+		xpath式、相対パスを作成
+	</h1>
+
+	<div class="container">
+
+		<div id="start">
+
+			<h2>xpath式、相対パスを作成</h2>
+			<p> <em>html2xpath</em>
+				は情報を取得したいウェブサイトからxpathを作成するサービスです。以下の入力欄に取得したいウェブサイトのURLを入れて、GOボタンを押してください。
+			</p>
+
+			<form id="start_url" method="get" action="" class="go">
+				<dl>
+					<dt>ウェブサイトのURL</dt>
+					<dd>
+						<input type="text" id="url" class="url" name="url" value="http://" size="50" accesskey="u" tabindex="1" />
+					</dd>
+				</dl>
+				<p>
+					<input type="submit" class="button" value="GO" accesskey="g" tabindex="2" />
+				</p>
+			</form>
+
+			<h2>使い方</h2>
+			<p>
+				ウェブサイトのURLを入れて、GOボタンを押す。
+				<br />
+				xpathを作成したい部分をクリックするとxpathを作成します。
+				<br />
+				shiftキーを押しながらリンクを２つクリックするとリンク一覧を取得するxpathを作成します。
+				<br />
+				「＋」をクリックした後にxpathを作成したい部分をクリックすると相対パスを作成します
+				<br />
+				リンク部分を選択した場合画面右にリンク一覧を表示します。
+				<br />
+				リンク一覧のリンクを選択してURLボタンを押すとリンク先のページを表示します。
+				<br />
+				拡げる[↑]、縮める[↓]ボタンで選択範囲を拡大縮小します。
+				<br />
+				xpath、相対パスは直接編集可能です。(編集後Enter)
+				<br />
+			</p>
+
+			<h2>用途</h2>
+			<p>
+				<a href="http://xpath.kayac.com/">XPathGraph</a>
+				<br />
+				xpathからグラフを作成
+				<br />
+				<a href="http://rssc.dokoda.jp/">RSSクリエイター</a>
+				<br />
+				xpathからRSSを作成
+				<br />
+				<a href="http://wedata.net/databases/LDRFullFeed/">データベース LDRFullFeed</a>
+				<br />
+			</p>
+
+		</div>
+		<!-- start -->
+
+		<div id="html2xpath">
+			<div id="edit"></div>
+			<iframe id="page" name="page" src=""></iframe>
+		</div>
+		<!-- html2xpath -->
+
+	</div>
+	<!-- container -->
+
+</body>
+</html>
