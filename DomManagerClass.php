@@ -22,7 +22,7 @@ class DomManagerClass
 		//文字化け対策.  
 		$dom->encoding = 'UTF-8';
 
-		//字下げや空白を考慮してきれいに整形した出力を行う。。。abcde
+		//字下げや空白を考慮してきれいに整形した出力を行う。。。abcdefg
 		$dom->formatOutput = true;
 
 		@$dom->loadHTML($html); // nameとidの値が被るとエラーになるので、@で抑制
